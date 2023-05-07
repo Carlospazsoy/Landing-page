@@ -144,6 +144,9 @@ nav>div>a{
 }
 .columna img{
     height: 60%;
+    width: 100%; 
+    box-sizing: border-box;
+    
 }
 
 
