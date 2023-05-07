@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* width: 100%; */ /* TEMP */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+} 
+nav{
+    display: flex;
+}
+
+nav>div>a{
+    display: flex;
+    width: 200px;
+    margin: 10px; 
+}
+
+.jumbotron{
+    background-image: linear-gradient(120deg, rgba(241, 147, 251, 0.699) 0%, rgba(85, 27, 35, 0.692) 100%), url("./Assets/rosas_2.png");
+    width: 100%;
+    height: 480px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    border-bottom-left-radius: 8px ;
+    border-bottom-right-radius: 8px ;
+}
+.textos-jumbotron{
+    height: 500px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.textos-jumbotron h1{
+    font-size: 60px;  
+}
+
+.textos-jumbotron p{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.textos-jumbotron a{
+    display: flex;
+    text-decoration: none;
+    padding: 12px 12px;
+    background: #a18cd1;
+    border-radius: 8px;
+    color: #fff;
+}
+
+/* Estilos generales */
+
+.contenedor{
+    width: 90%;
+    /* max-width: 1000px; */
+    overflow: hidden;
+    margin: auto;
+
+}
+.contenedor{
+    padding: 30px 10px;
+    
+}
+
+.titulo{
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.titulo.left{
+    text-align: left;
+}
+
+/* Start */
+
+.website{
+    display: flex;
+/* justify-content: space-between; */ /*no me funcion y puse margen a continuacion  */
+}
+.website p{
+    padding: 20px;
+}
+.website img{
+    width: 50%;
+}
+
+.parrafo{
+    text-align: justify;
+    margin-bottom: 20px;
+
+}
+/* .parrafo a{
+    width: auto;
+} */
+
+.cta{
+    display: inline-block;
+    text-decoration: none;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    padding: 12px 15px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+/* Info */
+
+.info{
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    color: #fff;
+}
+
+
+/* Cards */
+.card{
+    display: flex;
+}
+.columna{ /* clase dentro de los div */
+    background-color: #d2d2d2;
+    color: aliceblue;
+    border: 1px solid #4291d1;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    height: 300px;
+    
+}
+.columna img{
+    height: 60%;
+}
+
+
+.columna:hover{
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.527);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.card p{
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* galeria */
+
+.galeria{
+    background: #f2f2f2;
+    border-radius: 10px;
+    border: 1px solid #4291d1;
+
+}
+
+.container_grid{
+    width: 100%;
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+    display: grid ; /* ACTIVAR EL CONTEXTO grid */
+    grid-template-areas:
+    ". ." /* sintaxis se puede ver en mozilla */
+    ". ."
+    ". ."
+    
+}
+
+.container_grid>img{
+    width: 98%;
+    object-fit: cover;
+    /* margin-bottom: 20px; */
+    margin: 5px;
+    display: block;
+    box-shadow: 30px rgb(255, 2, 2); /* no me funcionó */
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* info2 */
+
+.last-section{
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between;
+    padding-bottom: 40px; */
+}
+.last-section h2{
+    width: 50%;
+}
+.last-section p{
+    padding: 10px;
+    width: 50%;
+}
+
+/* contacto */
+
+#contacto{
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);  
+    color: #fff;
+    border-top-left-radius: 8px ;
+    border-top-right-radius: 8px ;
+}
+
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input{
+    background: transparent;
+    border: 0;
+    color: #fff;
+    outline: none;
+    border: 1px  solid #fff;
+    padding: 20px 10px;
+}
+
+.input::placeholder{
+    color: #fff;
+    font-family: 'raleway', 'sans-serif';
+}
+
+input[type="text"], 
+input[type="email"]{
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.form textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+input[type="submit"]{
+    width: 120px;
+    text-align: center;
+    padding: 14px 0;
+    border-radius: 8px;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    color: tomato;
+    background: #fff;
+    border-radius: 8px;
+}
+
+@media screen and (max-width:800px){
+    .textos-jumbotron h1{
+        text-align: center;
+        font-size: 50px;
+        
+    }
+    /* estilos generales */
+    .titulo{
+        font-size: 35px;
+        margin-top: 50px;
+    }
+
+    .titulo.left{
+        text-align: center;
+    }
+
+    .info p{
+        text-align: center;
+    }
+
+    /* section */
+    .website{
+        flex-direction: column;
+         /* con esto se evitan deformaciones */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .website img{
+        width: 100%;
+    }
+
+    /* Cards */
+
+    .card{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    /* galeria */
+
+    .galeria-cont>img{
+        width: 48%;
+    }
+
+    /* last */
+
+    .last-section{
+        width: 98%;
+        margin-bottom: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+
+    .card{
+        overflow: auto
+    }
+}
+
+@media screen and (max-width:400px){
+    .titulo,
+    .textos-jumbotron h1{
+        font-size: 25px;
+    }       
+
+    .textos-jumbotron p{
+        font-size: 20px;
+        text-align: center;
+    }
+
+}
+
+/* footer y redes sociales */
+
+footer{
+    position: static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #2e2e2e;
+    height: auto;
+    width: 100vw;
+
+    padding-top: 40px;
+    color: #ffffff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #ffffff;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #ffffff;
+    border: 1.1px solid white;
+    padding: 5px;
+
+    border-radius: 50%;
+
+}
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+
+
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: rgb(241, 147, 251) ;
+}
