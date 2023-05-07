@@ -326,7 +326,7 @@ input[type="submit"]:hover{
     }
 
     .card{
-        overflow: auto
+        overflow-x: auto;
     }
 }
 
