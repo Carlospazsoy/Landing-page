@@ -99,18 +99,20 @@ nav>div>a{
     padding: 20px;
 }
 .website img{
-    width: 50%;
+    width: 100%;
 }
 
 .parrafo{
     text-align: justify;
-    margin-bottom: 20px;
-
 }
 /* .parrafo a{
     width: auto;
 } */
 
+.container_cta{
+    padding: 20px;
+    width: 50%;
+}
 .cta{
     display: inline-block;
     text-decoration: none;
@@ -207,10 +209,6 @@ nav>div>a{
 .last-section h2{
     width: 50%;
 }
-.last-section p{
-    padding: 10px;
-    width: 50%;
-}
 
 /* contacto */
 
@@ -286,6 +284,7 @@ input[type="submit"]:hover{
         text-align: center;
     }
 
+    
     .info p{
         text-align: center;
     }
